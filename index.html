@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matias Cuervo | Full Stack Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Meta tags for SEO & Social Media -->
+    <meta name="description" content="Portafolio profesional de Matias Cuervo, desarrollador full-stack estudiante de la UTN.">
+    <meta name="keywords" content="Matias Cuervo, Full Stack Developer, Programador, UTN, Java, C#, Python, JavaScript, HTML, CSS, SQL">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Overlay for mobile menu -->
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Header & Navigation -->
+    <header class="header" id="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="#home" class="logo">Matias<span>.dev</span></a>
+                
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="#home" class="nav-link active">Inicio</a></li>
+                    <li><a href="#about" class="nav-link">Sobre mí</a></li>
+                    <li><a href="#skills" class="nav-link">Habilidades</a></li>
+                    <li><a href="#projects" class="nav-link">Proyectos</a></li>
+                    <li><a href="#contact" class="nav-link">Contacto</a></li>
+                </ul>
+
+                <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero section">
+            <!-- Decorative background elements -->
+            <div class="bg-shape shape-1"></div>
+            <div class="bg-shape shape-2"></div>
+            
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <p class="greeting">Hola, soy</p>
+                    <h1 class="title">Matias Cuervo</h1>
+                    <h2 class="subtitle">Desarrollador <span class="highlight-text">Full Stack</span></h2>
+                    <p class="description">
+                        Estudiante de programación en la UTN apasionado por crear aplicaciones eficientes y experiencias web modernas. Construyendo soluciones desde interfaces atractivas hasta bases de datos robustas.
+                    </p>
+                    <div class="hero-cta">
+                        <a href="#projects" class="btn btn-primary">Ver mis proyectos <i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="#contact" class="btn btn-secondary">Contactar</a>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/matiascuervo" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/mat%C3%ADas-cuervo-b37396303/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <!-- Optional: Placeholder for an image or 3D element -->
+                <div class="hero-visual">
+                    <div class="glass-card profile-card">
+                        <!-- Leave an empty div or placeholder icon if no photo is available initially -->
+                        <img src="assets/imagenes/caripela3.png" alt="Matias Cuervo" class="profile-img">
+                        <div class="tech-badges">
+                            <span class="badge"><i class="fa-brands fa-java"></i> Java</span>
+                            <span class="badge"><i class="fa-brands fa-js"></i> JS</span>
+                            <span class="badge"><i class="fa-solid fa-database"></i> SQL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Sobre mí</h2>
+                    <div class="section-line"></div>
+                </div>
+                <div class="about-content">
+                    <div class="about-text glass-card">
+                        <p>
+                            Soy desarrollador en formación con un enfoque práctico y orientado a la resolución de problemas. Como estudiante en la <strong>Universidad Tecnológica Nacional (UTN)</strong>, he construido una base sólida en programación orientada a objetos, estructuras de datos y algoritmos.
+                        </p>
+                        <p>
+                            Me apasiona transformar ideas en código funcional. He trabajado con tecnologías backend y frontend, además de tener experiencia en desarrollo de aplicaciones de escritorio y videojuegos, lo que me ha dado una visión integral del ciclo de vida del software.
+                        </p>
+                        <p>
+                            Siempre busco aprender nuevas herramientas y mejorar mis habilidades para aportar valor y crear productos de alta calidad en la industria tecnológica.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Mis Habilidades</h2>
+                    <div class="section-line"></div>
+                </div>
+                
+                <div class="skills-grid">
+                    <!-- Java -->
+                    <div class="skill-card glass-card">
+                        <i class="fa-brands fa-java skill-icon java-color"></i>
+                        <h3>Java</h3>
+                        <p>POO, Estructuras de datos</p>
+                    </div>
+                    <!-- C# -->
+                    <div class="skill-card glass-card">
+                        <svg class="skill-icon csharp-color" viewBox="0 0 128 128" width="48" height="48">
+                            <path fill="currentColor" d="M124.08 67.4L99.64 109.8a21.46 21.46 0 0 1-18.57 10.74H32.19a21.49 21.49 0 0 1-18.57-10.74L-10.82 67.4a21.4 21.4 0 0 1 0-21.4L13.62 3.6A21.49 21.49 0 0 1 32.19-7.14h48.88A21.46 21.46 0 0 1 99.64 3.6L124.08 46a21.4 21.4 0 0 1 0 21.4z" transform="translate(6 10)"/>
+                            <path fill="#fff" d="M102.34 60.52h-21V46l-7.79 1.1v13.43H62.62L62.72 46l-7.71 1.09v13.43H43.9v3.42l31.18-.03v15H63.9l.1 14.65h-7.8v-14.65h-10.9v14.65h-7.79v-14.65h-11.1v-3.42l31.1-1.07v-15H46.42V42.6h11.1V28l7.79-1v15.6h10.9V26.8l7.71-1.12v16.92h10.93v2.32H63.92v15.6h11.17v-14.5l7.79-1.29v15.79h21v3.42h-1.48z"/>
+                        </svg>
+                        <h3>C#</h3>
+                        <p>Aplicaciones de escritorio</p>
+                    </div>
+                    <!-- Python -->
+                    <div class="skill-card glass-card">
+                        <i class="fa-brands fa-python skill-icon python-color"></i>
+                        <h3>Python</h3>
+                        <p>Desarrollo general, Funcional</p>
+                    </div>
+                    <!-- JavaScript -->
+                    <div class="skill-card glass-card">
+                        <i class="fa-brands fa-js skill-icon js-color"></i>
+                        <h3>JavaScript</h3>
+                        <p>Interactividad, Lógica Web</p>
+                    </div>
+                    <!-- HTML5 -->
+                    <div class="skill-card glass-card">
+                        <i class="fa-brands fa-html5 skill-icon html-color"></i>
+                        <h3>HTML5</h3>
+                        <p>Estructura semántica</p>
+                    </div>
+                    <!-- CSS3 -->
+                    <div class="skill-card glass-card">
+                        <i class="fa-brands fa-css3-alt skill-icon css-color"></i>
+                        <h3>CSS3</h3>
+                        <p>Diseño moderno, Responsive</p>
+                    </div>
+                    <!-- SQL -->
+                    <div class="skill-card glass-card">
+                        <i class="fa-solid fa-database skill-icon sql-color"></i>
+                        <h3>SQL</h3>
+                        <p>Diseño y Consultas de BD</p>
+                    </div>
+                    <!-- Game Dev -->
+                    <div class="skill-card glass-card">
+                        <i class="fa-solid fa-gamepad skill-icon game-color"></i>
+                        <h3>Videojuegos</h3>
+                        <p>Lógica de juegos</p>
+                    </div>
+                    <!-- Linux -->
+                    <div class="skill-card glass-card">
+                        <i class="fa-brands fa-linux skill-icon linux-color"></i>
+                        <h3>Linux</h3>
+                        <p>Administración básica, terminal y permisos</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Portafolio</h2>
+                    <div class="section-line"></div>
+                </div>
+                
+                <div class="projects-grid">
+                    <!-- Project Card 1 -->
+                    <div class="project-card glass-card">
+                        <div class="project-img-container">
+                            <!-- Si agregas imágenes luego, reemplaza el div por: <img src="assets/images/project1.jpg" alt="Nombre del Proyecto"> -->
+                            <div class="project-placeholder-img" 
+                                style="background-image: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
+                                        url('https://i.postimg.cc/VvKdv6mS/git3.jpg');
+                                        background-size: cover;
+                                        background-position: center;">
+                                <i class="fa-solid fa-desktop fa-3x"></i>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Gestor de Inventario</h3>
+                            <p>Aplicación de escritorio desarrollada para gestionar productos, con base de datos propia y validaciones.</p>
+                            <div class="project-techs">
+                                <span>C#</span>
+                                <span>SQL</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/matiascuervo" target="_blank" class="project-link"><i class="fa-brands fa-github"></i> Código</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 2 -->
+                    <div class="project-card glass-card">
+                        <div class="project-img-container">
+                           <div class="project-placeholder-img" 
+                            style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+                                    url('https://i.postimg.cc/zX43DMH1/red-juego3.png');
+                                    background-size: cover;
+                                    background-position: center;">
+                            <i class="fa-solid fa-gamepad fa-3x"></i>
+                        </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Juego 2D</h3>
+                            <p>Videojuego retro con mecánicas clásicas, sistema de colisiones y manejo de estado.</p>
+                            <div class="project-techs">
+                                <span>Python</span>
+                                <span>POO</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/matiascuervo/segundo-parcial-laboratorio-1-B" target="_blank" class="project-link"><i class="fa-brands fa-github"></i> Código</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 3 -->
+                    <div class="project-card glass-card">
+                        <div class="project-img-container">
+                            <div class="project-placeholder-img" style="background: linear-gradient(135deg, #1f2937, #111827);">
+                                <i class="fa-solid fa-globe fa-3x"></i>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Web App Dashboard</h3>
+                            <p>Interfaz de administrador para un sistema web, completamente responsive y estético.</p>
+                            <div class="project-techs">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JS</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/matiascuervo" target="_blank" class="project-link"><i class="fa-brands fa-github"></i> Código</a>
+                                <a href="#" target="_blank" class="project-link"><i class="fa-solid fa-external-link-alt"></i> Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Hablemos</h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="contact-content glass-card">
+                    <p class="contact-text">
+                        Actualmente estoy abierto a nuevas oportunidades de desarrollo o colaboración. Si tenés una idea de proyecto, o simplemente querés saludar, ¡no dudes en escribirme!
+                    </p>
+                    
+                    <a href="maticuervoc@gmail.com" class="btn btn-primary btn-large">
+                        <i class="fa-solid fa-envelope"></i> maticuervoc@gmail.com
+                    </a>
+
+                    <div class="contact-social">
+                        <a href="https://www.linkedin.com/in/mat%C3%ADas-cuervo-b37396303/" target="_blank" class="social-btn">
+                            <i class="fa-brands fa-linkedin"></i> LinkedIn
+                        </a>
+                        <a href="https://github.com/matiascuervo" target="_blank" class="social-btn">
+                            <i class="fa-brands fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <a href="#home" class="logo">Matias<span>.dev</span></a>
+                <p>&copy; 2026 Matias Cuervo. Construido con HTML, CSS y JS puro.</p>
+                <div class="footer-social">
+                    <a href="https://github.com/matiascuervo" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/mat%C3%ADas-cuervo-b37396303/" aria-label="LinkedIn" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>
